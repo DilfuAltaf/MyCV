@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Website</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="bg-black text-white">
+    <header
+      class="fixed top-0 left-0 z-[100] w-full bg-black/30 backdrop-blur-lg transition-all duration-300"
+    >
+      <div class="h-[120px] w-full flex px-[5%] items-center justify-between">
+        <h1 class="text-[24px] font-semibold">
+          <a href="#"
+            >Dilfu
+            <span
+              class="text-green-500 [text-shadow:0_0_10px_rgba(0,255,0,0.7)]"
+              >Altaf</span
+            ></a
+          >
+        </h1>
+
+        <!-- Hamburger Icon with Font Awesome -->
+        <button
+          id="hamburger"
+          class="lg:hidden text-green-500 text-2xl focus:outline-none"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Navigation Menu -->
+        <ul
+          id="navMenu"
+          class="hidden lg:flex flex-col lg:flex-row gap-6 lg:gap-11 items-center absolute lg:static top-[100%] left-0 w-full lg:w-auto bg-black/90 lg:bg-transparent py-6 lg:py-0 px-[5%] lg:px-0 transition-all duration-300"
+        >
+          <li>
+            <a
+              href="#"
+              class="text-[16px] text-green-500 underline underline-offset-8"
+              >Home</a
+            >
+          </li>
+          <li><a href="#aboutMe" class="text-[16px] text-white">About</a></li>
+          <li>
+            <a href="#portfolio" class="text-[16px] text-white">Portfolio</a>
+          </li>
+          <li><a href="#contact" class="text-[16px] text-white">Contact</a></li>
+        </ul>
+
+        <!-- Button -->
+        <button
+          class="hidden lg:block border-2 border-green-500 py-3 px-3 rounded-full text-green-500 hover:[box-shadow:0_0_15px_green] hover:bg-green-500 hover:text-black transition duration-300 ease-out"
+        >
+          Download CV
+        </button>
+      </div>
+    </header>
+
+    <main class="bg-black text-white mt-[100px]">
+      <div id="home" class="flex md:flex-row flex-col mx-[5%]">
+        <div class="relative">
+          <img
+            src="img/dilfu.png"
+            alt="Dilfu Altaf"
+            class="w-[2000px] rounded-full transition duration-300 shadow-[0_0_25px_10px_rgba(34,197,94,0.5)] hover:opacity-90 hover:scale-110 hover:shadow-[0_0_45px_20px_rgba(34,197,94,0.8)]"
+          />
+        </div>
+        <div class="ml-[5%] flex flex-col justify-center gap-5 md:mt-0 mt-5">
+          <h1 class="font-semibold lg:text-6xl text-4xl">
+            Hi, It's <span class="text-green-500">Dilfu Altaf</span>
+          </h1>
+          <h2 class="font-medium lg:text-5xl text-3xl">
+            I'm a <span class="text-green-500">Software Development</span>
+          </h2>
+          <p class="mt-5">
+            Nama saya Dilfu. Saya sangat menyukai coding, terutama di bidang
+            Front-End Development dan UI/UX Design. Saya senang menciptakan
+            tampilan antarmuka yang menarik dan pengalaman pengguna yang
+            intuitif. Dengan kombinasi desain yang simpel dan fungsionalitas
+            yang optimal, saya berusaha membuat website yang tidak hanya indah
+            secara visual tetapi juga nyaman digunakan. Mari berbagi dan belajar
+            bersama dalam dunia pengembangan web!
+          </p>
+          <div class="flex gap-4 text-md">
+            <i
+              class="fa-brands fa-linkedin border-2 w-[30px] rounded-full px-1.5 py-1.5 text-green-500 hover:text-black hover:bg-green-500 transform hover:scale-125 hover:-translate-y-1 transition duration-300 ease-out hover:shadow-[0_0_25px_10px_rgba(34,197,94,0.5)] hover:border-transparent"
+            ></i>
+            <i
+              class="fa-brands fa-github border-2 rounded-full px-1.5 py-1.5 text-green-500 hover:text-black hover:bg-green-500 transform hover:scale-125 hover:-translate-y-1 transition duration-300 ease-out hover:shadow-[0_0_25px_10px_rgba(34,197,94,0.5)] hover:border-transparent"
+            ></i>
+            <i
+              class="fa-brands fa-instagram border-2 rounded-full px-1.5 py-1.5 text-green-500 hover:text-black hover:bg-green-500 transform hover:scale-125 hover:-translate-y-1 transition duration-300 ease-out hover:shadow-[0_0_25px_10px_rgba(34,197,94,0.5)] hover:border-transparent"
+            ></i>
+            <i
+              class="fa-brands fa-facebook border-2 rounded-full px-1.5 py-1.5 text-green-500 hover:text-black hover:bg-green-500 transform hover:scale-125 hover:-translate-y-1 transition duration-300 ease-out hover:shadow-[0_0_25px_10px_rgba(34,197,94,0.5)] hover:border-transparent"
+            ></i>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="aboutMe"
+        class="min-h-screen flex items-center justify-center bg-black md:mt-0 mt-20"
+      >
+        <div
+          class="max-w-4xl w-full bg-gray-900 p-10 rounded-2xl shadow-xl border border-green-500 relative"
+        >
+          <!-- Avatar -->
+          <div class="absolute -top-12 left-1/2 transform -translate-x-1/2">
+            <img
+              src="img/dilfu.png"
+              alt="Avatar"
+              class="w-24 h-24 rounded-full border-4 border-green-500 shadow-lg"
+            />
+          </div>
+
+          <!-- Konten About -->
+          <div class="mt-12 text-center">
+            <h1 class="text-4xl font-bold text-green-500 mb-4">Tentang Saya</h1>
+            <p class="text-lg text-gray-300">
+              Saya seorang
+              <span class="text-green-500 font-semibold"
+                >Front-end Developer</span
+              >
+              &
+              <span class="text-green-500 font-semibold">UI/UX Designer</span>
+              yang berfokus pada desain antarmuka yang modern dan pengalaman
+              pengguna yang optimal.
+            </p>
+          </div>
+
+          <!-- Keahlian -->
+          <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 text-center">
+            <div class="p-4 bg-gray-800 rounded-xl hover:scale-105 transition">
+              <h2 class="text-xl font-semibold text-green-500">
+                Front-end Development
+              </h2>
+              <p class="text-gray-300">HTML, CSS, Tailwind CSS</p>
+            </div>
+            <div class="p-4 bg-gray-800 rounded-xl hover:scale-105 transition">
+              <h2 class="text-xl font-semibold text-green-500">UI/UX Design</h2>
+              <p class="text-gray-300">Figma, Prototyping, Wireframing</p>
+            </div>
+          </div>
+
+          <!-- Progress Bar Keahlian -->
+          <div class="mt-8 space-y-4">
+            <div>
+              <p class="text-green-500 font-semibold">HTML & CSS</p>
+              <div class="w-full bg-gray-700 h-3 rounded-full mt-1">
+                <div class="bg-green-500 h-3 rounded-full w-5/6"></div>
+              </div>
+            </div>
+            <div>
+              <p class="text-green-500 font-semibold">Tailwind CSS</p>
+              <div class="w-full bg-gray-700 h-3 rounded-full mt-1">
+                <div class="bg-green-500 h-3 rounded-full w-3/4"></div>
+              </div>
+            </div>
+            <div>
+              <p class="text-green-500 font-semibold">UI/UX Design</p>
+              <div class="w-full bg-gray-700 h-3 rounded-full mt-1">
+                <div class="bg-green-500 h-3 rounded-full w-9/10"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="portfolio"
+        class="mt-[100px] bg-black py-20 px-10 rounded-lg max-w-6xl mx-auto shadow-lg"
+      >
+        <h2 class="font-medium text-5xl text-center text-green-500 mb-16">
+          Portfolio
+        </h2>
+        <p class="mt-5 text-center text-white">
+          Saya adalah seorang Software Developer dan UI/UX Designer yang
+          berfokus pada menciptakan solusi digital yang efisien dan
+          user-friendly.
+        </p>
+
+        <!-- Filter Kategori -->
+        <div class="flex justify-center gap-4 my-10">
+          <button
+            class="px-4 py-2 bg-green-500 text-black rounded-lg filter-btn active shadow-[0_0_25px_10px_rgba(34,197,94,0.5)]"
+            data-filter="all"
+          >
+            All
+          </button>
+          <button
+            class="px-4 py-2 bg-gray-700 text-white rounded-lg filter-btn"
+            data-filter="web"
+          >
+            Web Development
+          </button>
+          <button
+            class="px-4 py-2 bg-gray-700 text-white rounded-lg filter-btn"
+            data-filter="uiux"
+          >
+            UI/UX Design
+          </button>
+        </div>
+
+        <!-- Container Proyek -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mx-auto">
+          <!-- Web Projects -->
+          <div class="relative group filter-item" data-category="web">
+            <img
+              src="img/bali-tour-eta.vercel.app_.png"
+              class="w-full rounded-lg shadow-lg group-hover:scale-105 transition-all"
+            />
+            <div
+              class="absolute inset-0 w-full h-full bg-gray-700 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out flex flex-col items-center justify-center text-white rounded-lg"
+            >
+              <h3 class="text-xl font-semibold">Bali Tour</h3>
+              <a
+                href="https://bali-tour-eta.vercel.app/"
+                class="mt-2 bg-black text-green-500 px-4 py-2 rounded-md hover:bg-green-500 hover:text-white duration-300 hover:shadow-[0_0_25px_10px_rgba(34,197,94,0.5)]"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+
+          <div class="relative group filter-item" data-category="web">
+            <img
+              src="img/smartgadget-hub-responsive.vercel.app_.png"
+              class="w-full rounded-lg shadow-lg group-hover:scale-105 transition-all"
+            />
+            <div
+              class="absolute inset-0 w-full h-full bg-gray-700 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out flex flex-col items-center justify-center text-white rounded-lg"
+            >
+              <h3 class="text-xl font-semibold">SmartGadget Hub</h3>
+              <a
+                href="https://smartgadget-hub-responsive.vercel.app/"
+                class="mt-2 bg-black text-green-500 px-4 py-2 rounded-md hover:bg-green-500 hover:text-white duration-300 hover:shadow-[0_0_25px_10px_rgba(34,197,94,0.5)]"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+
+          <div class="relative group filter-item" data-category="web">
+            <img
+              src="img/smkmadinatulquran.png"
+              class="w-full rounded-lg shadow-lg group-hover:scale-105 transition-all"
+            />
+            <div
+              class="absolute inset-0 w-full h-full bg-gray-700 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out flex flex-col items-center justify-center text-white rounded-lg"
+            >
+              <h3 class="text-xl font-semibold">SMK Madinatul Quran</h3>
+              <a
+                href="https://smk-madinatulquran-yang-benar.vercel.app/"
+                class="mt-2 bg-black text-green-500 px-4 py-2 rounded-md hover:bg-green-500 hover:text-white duration-300 hover:shadow-[0_0_25px_10px_rgba(34,197,94,0.5)]"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+
+          <!-- UI/UX Projects -->
+          <div class="relative group filter-item" data-category="uiux">
+            <img
+              src="img/bali-tour-eta.vercel.app_.png"
+              class="w-full rounded-lg shadow-lg group-hover:scale-105 transition-all"
+            />
+            <div
+              class="absolute inset-0 w-full h-full bg-gray-700 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out flex flex-col items-center justify-center text-white rounded-lg"
+            >
+              <h3 class="text-xl font-semibold">Bali.Tour UI/UX</h3>
+              <a
+                href="https://www.figma.com/design/S7wUL4YTc67ZKpbxujGjDi/Bali.Tour?node-id=126-10"
+                class="mt-2 bg-black text-green-500 px-4 py-2 rounded-md hover:bg-green-500 hover:text-white duration-300 hover:shadow-[0_0_25px_10px_rgba(34,197,94,0.5)]"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+
+          <div class="relative group filter-item" data-category="uiux">
+            <img
+              src="img/login.png"
+              class="w-full rounded-lg shadow-lg group-hover:scale-105 transition-all"
+            />
+            <div
+              class="absolute inset-0 w-full h-full bg-gray-700 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out flex flex-col items-center justify-center text-white rounded-lg"
+            >
+              <h3 class="text-xl font-semibold">Login UI</h3>
+              <a
+                href="https://www.figma.com/design/4tQc1dHmbcPtg9AN3N0aFE/Halaman-Login"
+                class="mt-2 bg-black text-green-500 px-4 py-2 rounded-md hover:bg-green-500 hover:text-white duration-300 hover:shadow-[0_0_25px_10px_rgba(34,197,94,0.5)]"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+
+          <div class="relative group filter-item" data-category="uiux">
+            <img
+              src="img/smkuiux.png"
+              class="w-full rounded-lg shadow-lg group-hover:scale-105 transition-all"
+            />
+            <div
+              class="absolute inset-0 w-full h-full bg-gray-700 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out flex flex-col items-center justify-center text-white rounded-lg"
+            >
+              <h3 class="text-xl font-semibold">SMK MQ UI/UX</h3>
+              <a
+                href="https://www.figma.com/design/NEKImCLUKnp62EVSpeXrxy/SMK-MADINATULQURAN"
+                class="mt-2 bg-black text-green-500 px-4 py-2 rounded-md hover:bg-green-500 hover:text-white duration-300 hover:shadow-[0_0_25px_10px_rgba(34,197,94,0.5)]"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Tech Stack -->
+        <div class="mt-16 text-center">
+          <h3 class="text-2xl mb-4 text-green-500">Tech Stack</h3>
+          <div class="flex justify-center gap-6">
+            <img src="img/kejuruan/html.png" alt="HTML5" class="w-12" />
+            <img src="img/kejuruan/css.png" alt="CSS3" class="w-12" />
+            <img src="img/kejuruan/js.png" alt="JavaScript" class="w-12" />
+            <img
+              src="img/kejuruan/tailwind.png"
+              alt="Tailwind CSS"
+              class="w-12"
+            />
+            <img src="img/kejuruan/figma.png" alt="Figma" class="w-12" />
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="contact"
+        class="flex flex-col items-center justify-center min-h-screen p-6"
+      >
+        <div
+          class="bg-gray-800 shadow-2xl rounded-2xl p-8 w-full max-w-lg border border-green-500 relative overflow-hidden"
+        >
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-green-500 to-transparent opacity-10 pointer-events-none"
+          ></div>
+          <h2
+            class="text-3xl font-bold text-center text-green-400 mb-6 relative z-10"
+          >
+            Hubungi Saya
+          </h2>
+          <form id="contactForm" class="space-y-4 relative z-10">
+            <div class="group">
+              <label for="name" class="block text-green-400 font-semibold"
+                >Nama:</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="w-full px-4 py-2 border border-green-500 bg-gray-700 text-white rounded-lg focus:ring-2 focus:ring-green-400 transition-all duration-300 group-hover:scale-105"
+              />
+            </div>
+
+            <div class="group">
+              <label for="email" class="block text-green-400 font-semibold"
+                >Email:</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="w-full px-4 py-2 border border-green-500 bg-gray-700 text-white rounded-lg focus:ring-2 focus:ring-green-400 transition-all duration-300 group-hover:scale-105"
+              />
+            </div>
+
+            <div class="group">
+              <label for="message" class="block text-green-400 font-semibold"
+                >Pesan:</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                class="w-full px-4 py-2 border border-green-500 bg-gray-700 text-white rounded-lg focus:ring-2 focus:ring-green-400 transition-all duration-300 group-hover:scale-105"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full bg-green-500 hover:bg-green-600 text-gray-900 font-bold py-2 px-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg"
+            >
+              Kirim
+            </button>
+          </form>
+          <p
+            id="responseMessage"
+            class="mt-4 text-center text-green-400 font-semibold relative z-10"
+          ></p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-gray-700 text-gray-300 py-12">
+      <div class="container mx-auto text-center px-6">
+        <h2 class="text-3xl font-bold text-green-500">Dilfu.Altaf</h2>
+        <p class="text-sm mt-2">
+          &copy; 2025 Dilfu.Altaf. All Rights Reserved.
+        </p>
+
+        <div class="flex md:flex-nowrap flex-wrap justify-center gap-6 mt-4 text-lg md:px-0 px-4">
+          <a
+            href="#https://www.linkedin.com/in/dilfu-altaf-994a62329/"
+            class="hover:text-green-500 transition duration-300 flex items-center gap-2"
+          >
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a
+            href="#https://github.com/DilfuAltaf"
+            class="hover:text-green-500 transition duration-300 flex items-center gap-2"
+          >
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a
+            href="#portfolio"
+            class="hover:text-green-500 transition duration-300 flex items-center gap-2"
+          >
+            <i class="fas fa-briefcase"></i> Portfolio
+          </a>
+          <a
+            href="#contact"
+            class="hover:text-green-500 transition duration-300 flex items-center gap-2"
+          >
+            <i class="fas fa-envelope"></i> Contact
+          </a>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-8 text-sm">
+          <div>
+            <h3 class="font-semibold text-lg text-green-500 mb-2">About</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="hover:text-green-400">My Story</a></li>
+              <li><a href="#" class="hover:text-green-400">Experience</a></li>
+              <li><a href="#" class="hover:text-green-400">Skills</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg text-green-500 mb-2">Projects</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="hover:text-green-400">Web Apps</a></li>
+              <li><a href="#" class="hover:text-green-400">Mobile Apps</a></li>
+              <li><a href="#" class="hover:text-green-400">Open Source</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg text-green-500 mb-2">Resources</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="hover:text-green-400">Blog</a></li>
+              <li><a href="#" class="hover:text-green-400">Tutorials</a></li>
+              <li><a href="#" class="hover:text-green-400">Docs</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg text-green-500 mb-2">
+              Get in Touch
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="hover:text-green-400"
+                  ><i class="fas fa-envelope"></i> Email</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-green-400"
+                  ><i class="fab fa-twitter"></i> Twitter</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-green-400"
+                  ><i class="fab fa-instagram"></i> Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-8 text-xs text-gray-500">
+          <p>
+            Designed with <span class="text-red-500">&hearts;</span> by
+            Dilfu.Altaf
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
